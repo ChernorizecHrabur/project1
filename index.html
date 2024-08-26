@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div class="container">
+            <h2 class="mt-4">ПОДАРИ СПОРТ С КАРТА ПОДАРЪК!</h2>
+            <h6>ВСИЧКИ СПОРТОВЕ В ЕДНА КАРТА </h6>
+    
+            <div id="infoCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h2>Вариант 1</h2>
+                        <img src="https://contents.mediadecathlon.com/p1626376/k$41758346dc446f2c548d65ad4d01ddd2/DECATHLON%20SPORT%20LOVERS%20%20E%20Gift%20Card.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <h2>Вариант 2</h2>
+                        <img src="https://contents.mediadecathlon.com/p2602966/k$955f7edf0fd9c221888d4de00de1d7ca/FR%20%20E%20CARTE%20CADEAU%20DECATHLON%20FAMILY%20AH23.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <h2>Вариант 3</h2>
+                        <img src="https://contents.mediadecathlon.com/p2602981/k$5d0bc3deca775d621d10af2560b28098/FR%20%20E%20CARTE%20CADEAU%20DECATHLON%20VELOS%20AH23.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#infoCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#infoCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="text-center my-3 my-md-5">
+                <button id="continueButton" class="btn btn-primary btn-lg mb-3">Продължи с поръчката</button>
+                <div id="giftCardForm" style="display: none;">
+                    <form>
+                        <div class="mb-3">
+                            <label for="amountInput" class="form-label">Сума за зареждане (между 5 и 500 лева)</label>
+                            <input type="number" class="form-control" id="amountInput" min="5" max="500">
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h3>Данни на получател</h3>
+                                <div class="mb-3">
+                                    <label for="recipientNameInput" class="form-label">Име и Фамилия</label>
+                                    <input type="text" class="form-control" id="recipientNameInput">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="recipientEmailInput" class="form-label">Имейл</label>
+                                    <input type="email" class="form-control" id="recipientEmailInput">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h3>Данни на поръчвател</h3>
+                                <div class="mb-3">
+                                    <label for="senderNameInput" class="form-label">Име и Фамилия</label>
+                                    <input type="text" class="form-control" id="senderNameInput">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="senderEmailInput" class="form-label">Имейл</label>
+                                    <input type="email" class="form-control" id="senderEmailInput">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="messageInput" class="form-label">Съобщение към получателя</label>
+                                    <textarea class="form-control" id="messageInput" rows="3" maxlength="200"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Добавяне към количката</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="accordion" id="infoAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Как да използва подаръчната карта?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#infoAccordion">
+                        <div class="accordion-body">
+                            - В картата подарък може да се зарежда сума между 5 и 500 лева. <br> - Валидността на картата подарък е 2 години от датата на покупка. <br> - Картата подарък може да се използва във всички магазини на Декатлон в България и на www.decathlon.bg. <br> - Картата подарък може да се използва за покупка на всички стоки и услуги, предлагани от Декатлон. <br> - Картата подарък не може да бъде връщана или заменяна за пари. <br> - Картата подарък не може да бъде зареждана с нова сума след изтичане на валидността й. <br> - Картата подарък не може да бъде заменена при загуба или кражба. <br> - Картата подарък не може да бъде използвана за покупка на друга карта подарък.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Често задавани въпроси
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#infoAccordion">
+                        <div class="accordion-body">
+                            <h5>-Как да използвам подаръчната карта?</h5>
+                            <p>Картата подарък може да се използва във всички магазини "Decathlon", както и на сайта ни "www.decathlon.bg", като при употреба в сайта ни, трябва да изполвате кода на гърба на картата.</p>
+                            <h5>-Как да заредя подаръчната карта?</h5>
+                            <p>Картата може да бъде заредена или от сайта ни, или физически в магазините ни в България.</p>
+                            <h5>-Как да проверя баланса на подаръчната карта?</h5>
+                            <p>Всеки служител в територията на физическите магазини може да ви каже салдото на картата подарък.</p>
+                            <h5>-Как да върна или заменя подаръчната карта?</h5>
+                            <p>Карта подарък не може да бъде завърната или заменена.</p>
+                            <h5>-Възможно ли е да се издаде фактура за картата подарък?</h5>
+                            <p>По законите на българия, няма как да се издаде фактура за артикул, на който не може да се таксува ДДС. Възможно е във физически магазин да ви се издаде покупно-продажбен протокол.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Права за употреба на картата подарък
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#infoAccordion">
+                        <div class="accordion-body">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center my-3 my-md-5">
+                <a href="https://www.decathlon.gifts/bg_BG/website" class="btn btn-primary">Научете повече за картата подарък</a>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('continueButton').addEventListener('click', function() {
+            document.getElementById('giftCardForm').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

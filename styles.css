@@ -1,0 +1,39 @@
+h2, h6 {
+    color: #0F00E8;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom:auto;
+}
+.carousel-item img {
+    max-width: 55%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.carousel-control-prev-icon {
+    background-image: url('https://icones.pro/wp-content/uploads/2021/06/symbole-fleche-gauche-bleu.png');
+    width: 100px;
+    height: 100px;
+    background-size: 100% 100%;
+}
+.carousel-control-next-icon {
+    background-image: url('https://i.imgur.com/0AQnxmz.png');
+    width: 100px;
+    height: 100px;
+    background-size: 100% 100%;
+}
+.carousel-control-prev, .carousel-control-next {
+    opacity: 1;
+}
+.carousel-item h2 {
+    text-align: center;
+    margin-top:20px;
+}
+button.accordion-button::after {
+    display: none;
+}
+button.accordion-button {
+    justify-content: center;
+}
